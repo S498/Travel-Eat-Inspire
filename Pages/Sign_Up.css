@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(Images/adventure-beach-blue.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: sans-serif;
+/*    -webkit-filter:blur(1px);*/
+}
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0ox;
+    clear: both;
+}
+.row{
+/*    max-width: 1180px;*/
+    margin: 0 auto;
+}
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin: 10px;
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+    margin:60px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid #bf55ec;
+}
+.main-nav li:nth-child(5) a
+{    
+    padding: 10px 30px;
+     background: rgba(0,0,0,0.3);
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}    
+.signbox{
+  width:320px;
+  height: 480px;
+  background: rgba(0,0,0,0.3);
+  color:#fff;
+  font-family: sans-serif;
+  top:60%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  -webkit-text-stroke:0.25px black;
+}
+::-webkit-input-placeholder {
+    color:#fff;
+    font-size: 13px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:-50px;
+    left:calc(50% - 50px);
+    border-color: #FF0000
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.signbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.signbox input{
+    width: inherit;
+    margin-bottom: 20px;
+}
+.signbox input[type="text"],input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color:#fff;
+    font-size: 16px;
+    -webkit-text-stroke:0.25px black;
+}
+.signbox input[type="submit"]{
+    width: 100px;
+    border:none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size:18px;
+    border-radius:20px;
+}
+.signbox input[type="submit"]:hover{
+    cursor:pointer;
+    background: #ffc107;
+    color: #000;
+}
+.signbox a{
+    -webkit-text-stroke:0.25px black;
+    text-decoration: none;
+    font-size:16px;
+    line-height: 15px;
+    color: #fff;
+}
+.signbox a:hover{
+    color:#ffc107;
+}

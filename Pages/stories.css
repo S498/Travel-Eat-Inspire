@@ -1,0 +1,333 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    font-family: 'Flamenco', cursive;
+}
+.features{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("images/adventure-beach-blue.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin: 10px;
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+    margin-left:460px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+.main-nav li:nth-child(2) a
+{    
+    padding: 10px 30px;
+     background: rgba(0,0,0,0.3);
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid #bf55ec;
+}
+.main-content{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.mobile-icon{display: none;}
+
+.features-2{
+    color: #fff;
+    background-image:url(images/e.jpg);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-attachment:fixed;
+}
+section h2{
+    text-align: center;
+    margin: 40px;
+    font-weight: 600;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.pic img{
+    width: 60%;
+    margin-left: 30%; 
+    margin-top: 50px;
+}
+.work-step{
+    color: wheat;
+    margin-top: 15px;  
+}
+.work-step div{
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.work-step p{
+    line-height: 25px;
+    text-align: justify;
+}
+.work-step p a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    font-weight: 100;
+}
+.second_story{
+   color: #fff;
+    background-image:url(images/e.jpg);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-attachment: fixed;
+}
+.second_story img{
+    width: 100%;
+    margin-top: 50px;
+}
+.pic-2 img{
+    width: 60%;
+    margin-left: 30%; 
+    margin-top: 50px;
+}
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.back-img{
+    background-image: url(Images/black-pepper-bright-colors-940302.jpg);
+    min-height: 100%;
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.third_story{
+    color: #fff;
+    background-image: url(Images/e.jpg);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-attachment: fixed;
+}
+.third_story img{
+    width: 100%;
+    margin-top: 50px;
+}
+.pic-3 img{
+    width: 60%;
+    margin-left: 30%; 
+    margin-top: 50px;
+}
+@media only screen and (max-width: 1180px){
+	.main-content-header{
+		width:100%;
+		padding:0 2%;
+	}
+
+	.row{
+		width:100%;
+		padding:0 2%;
+	}
+}
+
+@media only screen and (max-width: 998px){
+	h2{font-size: 200%;}
+}
+
+@media only screen and (max-width: 768px){
+	h2{font-size: 180%;}
+
+	.main-nav{display: none;}
+
+	.mobile-icon{ display: inline-block;
+		color: #fff;
+		float: right;
+		margin-top: 30px;
+		margin-right: 20px;
+	}
+
+	.main-nav{float: left;}
+
+	.main-nav li{
+		display: block;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.btn-full{
+		margin-bottom: 20px;
+	}
+
+	h2{font-size: 180%;}
+}
+/*------footer-----*/
+
+.footer-main-div{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #272727;
+    padding: 20px 0px;
+}
+.footer-social-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-social-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #3B5998;
+}
+.footer-social-icons ul li a{
+    color: #fff;
+    font-size: 25px;
+    display: block;
+}
+.footer-social-icons ul li:hover{
+    background: red;
+}
+.footer-social-icons ul li:hover a{
+    color: #fff;
+}
+.footer-social-icons ul li a i{
+    line-height: 50px;
+}
+.footer-menu-one{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 25px;
+}
+.footer-menu-one ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu-one ul li{
+    display: inline-block;
+    margin-top: 0px 15px;
+    
+}
+.footer-menu-one ul li a{
+    font-family: 'Flamenco', cursive;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    letter-spacing: 1px;
+}
+.footer-menu-one ul li a:hover{
+    color: #3B5998;
+}
+.footer-menu-two{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+}
+.footer-menu-two ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu-two ul li{
+    display: inline-block;
+    margin-top: 0px 15px;
+    
+}
+.footer-menu-two ul li a{
+    font-family: 'Flamenco', cursive;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    letter-spacing: 1px;
+}
+.footer-menu-two ul li a:hover{
+    color: #3B5998;
+}
+.footer-bottom{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #3B5998;
+    padding: 5px;    
+}
+.footer-bottom p{
+    font-family: 'Flamenco', cursive;
+    font-size: 14px;
+    text-align: center;
+        color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer-bottom p a{
+    color: #fff;
+}
+.footer-bottom p a:hover{
+    color: orangered;
+}

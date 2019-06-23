@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="Sign_Up.css">
+    <link rel="icon" href="icons8-beach-48.png" type="image/x-icon">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        function validate()
+        {
+            if(frm.name.value=="" && frm.pass.value=="" && frm.pass.value=="")
+                {
+                     swal("Oops!", "Please Enter The Details!", "error");
+                     return false;
+                }
+            if(frm.name.value=="")
+                {
+                     swal("Oops!", "Please Enter Your Name!", "error");
+                     return false;
+                }
+            if(frm.pass.value=="")
+                {
+                     swal("Oops!", "Please Enter Your Password!", "error");
+                     return false;
+                }
+            if(frm.email.value=="")
+                {
+                     swal("Oops!", "Please Enter Your Email address!", "error");
+                     return false;
+                }
+            else{
+                swal("Logged In!", "You have been logged in successfully!", "success");
+            }
+        }
+    </script>
+</head>
+<body>
+   <nav>
+        <div class="row" clearfix>
+            <a href="index.html"><img src="Images/logo.png" class="logo"></a>
+            <ul class="main-nav animated slideInDown">
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="login_page.html">Login</a></li>
+                <li><a href="Sign_Up.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="signbox">
+        <img src="Images/pikachu.png" class="avatar">
+        <h1>Sign Up Here</h1>
+        <form name="frm" id="frm">
+          <p>User Name</p>
+          <input type="text" name="name" id="name" placeholder="Enter username">
+          <p>Email</p>
+          <input type="text" name="email" id="email" placeholder="Enter your Email">
+          <p>Password</p>
+          <input type="password" name="pass" id="pass" placeholder="Enter password">
+<!--
+          <p>Re Enter Password</p>
+          <input type="password" placeholder="Re Enter password">
+-->
+          <input type="submit" value="Hop On" onclick="return validate();"><br>
+          <a href="login_page.html">Already Have a Account ?</a><br><br>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow-x:hidden;
+    font-family: 'Flamenco', cursive;
+}
+.features{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('images/adventure-beach-blue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    
+}
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin: 10px;
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+    margin-left:460px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid #bf55ec;
+}
+.main-content{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.mobile-icon{display: none;}
+
+section h2{
+    text-align: center;
+    margin: 40px;
+    font-weight: 600;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.list{
+width:400px;
+margin:0 auto;
+}
+
+.list ol{
+counter-reset: li;
+list-style: none;
+*list-style: decimal;
+font-size: 15px;
+font-family: 'Raleway', sans-serif;
+padding: 0;
+margin-bottom: 4em;
+}
+
+.list ol ol{
+margin: 0 0 0 2em;
+}
+
+.list a{
+position: relative;
+display: block;
+padding: .4em .4em .4em 2em;
+*padding: .4em;
+margin: .5em 0;
+background: #FC756F;
+color: #444;
+text-decoration: none;
+transition: all .2s ease-in-out;
+}
+
+.list a:hover{
+background: #d6d4d4;
+text-decoration:none;
+transform: scale(1.1);
+}
+
+.list a:before{
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -2.3em;
+top: 50%;
+margin-top: -1.0em;
+background:#FC756F;
+height: 2em;
+width: 2em;
+line-height: 2em;
+/*border: .3em solid #fff;*/
+text-align: center;
+font-weight: bold;
+color:#FFF;
+}
+
+
+
+/*------footer-----*/
+
+.footer-main-div{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #272727;
+    padding: 20px 0px;
+}
+.footer-social-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-social-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #3B5998;
+}
+.footer-social-icons ul li a{
+    color: #fff;
+    font-size: 25px;
+    display: block;
+}
+.footer-social-icons ul li:hover{
+    background: red;
+}
+.footer-social-icons ul li:hover a{
+    color: #fff;
+}
+.footer-social-icons ul li a i{
+    line-height: 50px;
+}
+.footer-menu-one{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 25px;
+}
+.footer-menu-one ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu-one ul li{
+    display: inline-block;
+    margin-top: 0px 15px;
+    
+}
+.footer-menu-one ul li a{
+    font-family: 'Flamenco', cursive;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    letter-spacing: 1px;
+}
+.footer-menu-one ul li a:hover{
+    color: #3B5998;
+}
+.footer-menu-two{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+}
+.footer-menu-two ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu-two ul li{
+    display: inline-block;
+    margin-top: 0px 15px;
+    
+}
+.footer-menu-two ul li a{
+    font-family: 'Flamenco', cursive;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    letter-spacing: 1px;
+}
+.footer-menu-two ul li a:hover{
+    color: #3B5998;
+}
+.footer-bottom{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #3B5998;
+    padding: 5px;    
+}
+.footer-bottom p{
+    font-family: 'Flamenco', cursive;
+    font-size: 14px;
+    text-align: center;
+        color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer-bottom p a{
+    color: #fff;
+}
+.footer-bottom p a:hover{
+    color: orangered;
+}
